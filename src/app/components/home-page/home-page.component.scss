@@ -4,11 +4,11 @@
     width: auto;
 }
 .menu{
-    position: absolute;
+    position: fixed;
     z-index: 9999;
-    margin-top: 20px;
     left: 0px;
     right: 0px;
+    background-color: #05522A;
 }
 .navbar-nav .nav-item .nav-link{
     color: #c3c8d6;
@@ -17,10 +17,53 @@
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 31px 16px;
+    padding:16px;
     line-height: 18px;
     text-align: center;
 }
+.menu .nav-pills .nav-link.active{
+    background-color:unset;
+}
+.menu.top-fixed .nav-pills .nav-link.active{
+    background-color: #97BC62;
+    color: #FFF;
+}
+.navbar-toggler{
+    box-shadow: none;
+    border: 0;
+}
+ .navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 6px auto;
+    background: #fff;
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+/* rotate first span */
+ .navbar-toggler span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+ 
+/* hide second span */
+ .navbar-toggler span:nth-of-type(2) {
+    opacity: 0;
+}
+ 
+/* rotate third span */
+ .navbar-toggler span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+ 
+.navbar-toggler.collapsed span {
+    transform: none;
+    opacity: 1;
+}
+.navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+
 .banner{
     height: 100%;
     // background: url(../../../../src/assets/images/background.jpg);
@@ -90,20 +133,18 @@
     color: #ff554e;
     border-color: #ff554e;
 }
-// .slide-left {
-//     animation: 1.2s slide-left;
-//   }
-//   @keyframes slide-left {
-//     from {
-//       margin-left: 100%;
-//     }
-//     to {
-//       margin-left: 0%;
-//     }
-//   }
+.slide-left {
+    animation-delay: 1.5s;
+    transform: scale(1) translateX(0);
+    transition: all 0.6s;
+  }
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services{
+    background-color: #f2f2f2;
+}
 .heading h2 {
     padding-bottom: 35px;
     padding-right: 50px;
@@ -136,10 +177,12 @@
 
 .services .icon-box {
     text-align: center;
-    padding: 70px 20px 80px 20px;
+    padding: 20px 10px;
     transition: all ease-in-out 0.3s;
-    background: #fff;
-    box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px;
+    margin-bottom: 20px;
   }
   
   .services .icon-box .icon {
@@ -156,6 +199,16 @@
     color: #fff;
     border-radius: 50%;
   }
+  .services .evnt-img {
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+  }
+  .services .evnt-img img{
+    height: 100%;
+    width: 100%;
+  }
+
   
   .services .icon-box .icon i {
     font-size: 36px;
@@ -287,12 +340,11 @@
 		font-size: 16px;
 	}
 	.navbar-nav{
-		position: absolute;
 		width: 100%;
-		left: 0;
 		color:#fff;
 		background:#181a1c;
 		text-align:center;
+        padding-block: 20px;
 	}
 	.nav > li > a {
 		display:block;
@@ -306,10 +358,6 @@
 		padding:15px 0 !important;
 		color:#fff !important;
 	}
-	.navbar-nav > li> a:hover{
-		background:#000 !important;
-	}
-	
 	.carousel-item h2,
 	.carousel-item h3,
 	.carousel-item p {
