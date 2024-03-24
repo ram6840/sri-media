@@ -171,7 +171,7 @@
     text-transform: none;
 }
 .services .container {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 60px;
 }
 
@@ -256,6 +256,63 @@
   .services .icon-box:hover .icon i {
     color: #fff;
   }
+
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.aboutus{
+  background-color: #f2f2f2;
+}
+.aboutus .heading h2 {
+  padding-bottom: 35px;
+  padding-right: 50px;
+  border-bottom: 11px solid #ff554e;
+  display: inline-block;
+}
+.aboutus .heading h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px;
+  color: #313338;
+  line-height: 57px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.aboutus .heading h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #313338;
+  // line-height: 57px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.aboutus .heading p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #8c9099;
+  padding-bottom: 0;
+  font-weight: 400;
+  text-transform: none;
+}
+.aboutus .heading ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #8c9099;
+  padding-bottom: 0;
+  font-weight: 400;
+  text-transform: none;
+}
+.aboutus .container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -384,7 +441,11 @@
         height: 35px;
     }
     .services .container {
-        padding-top: 30px;
+        padding-top: 65px;
+        padding-bottom: 30px;
+    }
+    .aboutus .container {
+        padding-top: 65px;
         padding-bottom: 30px;
     }
 	.heading h2 {
@@ -392,6 +453,11 @@
 		padding-right:0;
 		display:block;
 		border-bottom-width:2px;
+	}
+	.heading h3 {
+		font-size:28px;
+		padding-right:0;
+		display:block;
 	}
 	.carousel-item h2,
 	.carousel-item h3,
