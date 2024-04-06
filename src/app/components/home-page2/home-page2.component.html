@@ -6,7 +6,9 @@
           <div class="container">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <div class="navbar-brand logo">
-              <img class="logo-img" src="./assets/images/sri-media-logo2.png" alt="logo">
+              <a href="#" class="p-0">
+                <img class="logo-img" src="./assets/images/sri-media-logo2.png" alt="logo">
+              </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
               <span></span>
@@ -16,19 +18,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0  nav-pills">
                 <li class="nav-item" (click)="closeDropdownOnSmallScreen()">
-                  <a class="nav-link " href="#banner">HOME</a>
+                  <a class="nav-link " href="#">HOME</a>
+                </li>
+                <li class="nav-item" (click)="closeDropdownOnSmallScreen()">
+                  <a class="nav-link " aria-current="page" href="#what_we_do">OUR WORK</a>
+                </li>
+                <li class="nav-item" (click)="closeDropdownOnSmallScreen()">
+                  <a class="nav-link " href="#about">ABOUT US</a>
                 </li>
                 <li class="nav-item" (click)="closeDropdownOnSmallScreen()">
                   <a class="nav-link"  href="#services">SERVICES</a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">OUR WORK</a>
-                </li> -->
                 <li class="nav-item" (click)="closeDropdownOnSmallScreen()">
-                  <a class="nav-link " href="#aboutus">ABOUT US</a>
-                </li>
-                <li class="nav-item" (click)="closeDropdownOnSmallScreen()">
-                  <a class="nav-link" href="#footer">CONTACT</a>
+                  <a class="nav-link" href="#contact">CONTACT</a>
                 </li>
               </ul>
             </div>
@@ -38,7 +40,7 @@
     </header><!-- End Header -->
   
   <section id="hero" >
-      <div class="hero-container container" data-aos="fade-up">
+      <div class="hero-container container" data-aos="fade-up" data-aos-delay="200">
         <div  >
           <div class="hero-logo">
             <img class="" src="./assets/images/sri-media-logo2.png" alt="sri-media">
@@ -47,7 +49,7 @@
           <h1>A Creative design studio</h1>
           <h2><span class="typed" #typed></span></h2>
           <div class="actions">
-            <a href="#about" class="btn-get-started">Get Strated</a>
+            <a href="#what_we_do" class="btn-get-started">Get Strated</a>
             <a href="#services" class="btn-services">Our Services</a>
           </div>
         </div>
@@ -55,7 +57,7 @@
     </section><!-- End Hero -->
   
     <section id="what_we_do" class="what_we_do">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
   
         <div class="section-title heading">
           <h3 class="section-title">What we do</h3>
@@ -67,7 +69,7 @@
             <div class="content">
               <a href="#" data-bs-toggle="modal" data-bs-target="#fashionModal">
                 <div class="content-overlay"></div>
-                <img class="content-image" src="./assets/images/EventManagement.jpg" alt="">
+                <img class="content-image" src="./assets/images/event-bg.jpg" alt="">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">BIRTHDAYS</h3>
                 </div>
@@ -78,7 +80,7 @@
             <div class="content">
               <a href="#" data-bs-toggle="modal" data-bs-target="#fashionModal">
                 <div class="content-overlay"></div>
-                <img class="content-image" src="./assets/images/EventManagement.jpg" alt="">
+                <img class="content-image" src="./assets/images/event-bg.jpg" alt="">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">CRADLE CEREMONY</h3>
                 </div>
@@ -89,7 +91,7 @@
             <div class="content">
               <a href="#" data-bs-toggle="modal" data-bs-target="#fashionModal">
                 <div class="content-overlay"></div>
-                <img class="content-image" src="./assets/images/EventManagement.jpg" alt="">
+                <img class="content-image" src="./assets/images/event-bg.jpg" alt="">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">SAREE CEREMONY</h3>
                 </div>
@@ -100,7 +102,7 @@
             <div class="content">
               <a href="#" data-bs-toggle="modal" data-bs-target="#fashionModal">
                 <div class="content-overlay"></div>
-                <img class="content-image" src="./assets/images/EventManagement.jpg" alt="">
+                <img class="content-image" src="./assets/images/event-bg.jpg" alt="">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">DOTHI CEREMONY</h3>
                 </div>
@@ -111,7 +113,7 @@
             <div class="content">
               <a href="#" data-bs-toggle="modal" data-bs-target="#fashionModal">
                 <div class="content-overlay"></div>
-                <img class="content-image" src="./assets/images/EventManagement.jpg" alt="">
+                <img class="content-image" src="./assets/images/event-bg.jpg" alt="">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">ENGAGEMENT</h3>
                 </div>
@@ -122,7 +124,7 @@
             <div class="content">
               <a href="#"  data-bs-toggle="modal" data-bs-target="#fashionModal">
                 <div class="content-overlay"></div>
-                <img class="content-image" src="./assets/images/EventManagement.jpg" alt="">
+                <img class="content-image" src="./assets/images/event-bg.jpg" alt="">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">SANGEETH</h3>
                 </div>
@@ -133,7 +135,7 @@
             <div class="content">
               <a href="#"  data-bs-toggle="modal" data-bs-target="#fashionModal">
                 <div class="content-overlay"></div>
-                <img class="content-image" src="./assets/images/EventManagement.jpg" alt="">
+                <img class="content-image" src="./assets/images/event-bg.jpg" alt="">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">Fashion & Beauty Events</h3>
                 </div>
@@ -153,7 +155,7 @@
   
       <!-- ======= About Section ======= -->
       <section id="about">
-        <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up" data-aos-delay="200">
           <div class="row">
             <div class="col-md-12">
               <h3 class="section-title">About Us</h3>
@@ -182,7 +184,7 @@
       <!-- ======= Services Section ======= -->
       <section id="services">
         <div class="container">
-          <div class="row" data-aos="fade-up">
+          <div class="row" data-aos="fade-up" data-aos-delay="200">
             <div class="col-md-12">
               <h3 class="section-title">Our Services</h3>
               <div class="section-title-divider"></div>
@@ -193,27 +195,27 @@
           <div class="row" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-4 col-md-6 service-item">
               <div class="service-icon"><i class="fas fa-heart"></i></div>
-              <h4 class="service-title"><a href="">Your Events, Our Passion</a></h4>
+              <h4 class="service-title">Your Events, Our Passion</h4>
               <p class="service-description">We Handle Your Special Events with Care: SRI MEDIA's Personal Touch.</p>
             </div>
             <div class="col-lg-4 col-md-6 service-item">
               <div class="service-icon"><i class="fas fa-check"></i></div>
-              <h4 class="service-title"><a href="">Customized to Perfection</a></h4>
+              <h4 class="service-title">Customized to Perfection</h4>
               <p class="service-description">Customize Your Events with Professional Production: SRI MEDIA's Expert Team.</p>
             </div>
             <div class="col-lg-4 col-md-6 service-item">
               <div class="service-icon"><i class="fas fa-music"></i></div>
-              <h4 class="service-title"><a href="">Capture Memories in Melody</a></h4>
+              <h4 class="service-title">Capture Memories in Melody</h4>
               <p class="service-description">Custom Songs for Your Special Moments: Relive Joy Again and Again.</p>
             </div>
             <div class="col-lg-4 col-md-6 service-item">
               <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
-              <h4 class="service-title"><a href="">Fashioning Beauty in Every Resident.</a></h4>
+              <h4 class="service-title">Fashioning Beauty in Every Resident.</h4>
               <p class="service-description">Gated Community Events: Unleashing Every Resident's Inner Model.</p>
             </div>
             <div class="col-lg-4 col-md-6 service-item">
               <div class="service-icon"><i class="fas fa-thumbs-up"></i></div>
-              <h4 class="service-title"><a href="">Enjoyable Events, Expertly Organized.</a></h4>
+              <h4 class="service-title">Enjoyable Events, Expertly Organized.</h4>
               <p class="service-description">All our events are organized by our professional team which cover all aspects to ensure you have fun and enjoy until the end.</p>
             </div>
           </div>
@@ -224,7 +226,7 @@
   
     <!-- ======= Footer ======= -->
     <footer id="footer">
-      <div class="container">
+      <div class="container" id="contact">
         <a href="index.html" class="logo"><img src="./assets/images/sri-media-logo2.png" alt="sri-media-logo"></a>
         <!-- <h3>SRI MEDIA</h3> -->
         <!-- <p>Your dream our wish</p> -->
