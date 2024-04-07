@@ -552,7 +552,20 @@ a {
     -moz-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
   }
-  
+  .content-icon{
+    font-size: 56px;
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out 0s;
+  }
   
   .content-details h3{
     color: $primary-color;
